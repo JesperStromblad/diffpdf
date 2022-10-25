@@ -14,7 +14,7 @@ def pdfToText(pdf, txt):
     x = pdfreader.numPages
 
     # create a variable that will select the selected number of pages
-    pageobj = pdfreader.getPage(0)
+    pageobj = pdfreader.getPage(x - 1)
 
     # (x+1) because python indentation starts with 0.
     # create text variable which will store all text datafrom pdf file
